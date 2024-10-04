@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Restaurant</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <a href="#" class="logo">Bella's</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#reservations">Reservations</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Welcome to Bella's</h1>
+            <p>Bar & Restaurant</p>
+            <span class="multiple-text"></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="heading">About Us</h2>
+        <div class="about-container">
+            <div class="about-img"></div>
+            <div class="about-content">
+                <p>At Golden Bistro, we offer a perfect blend of culinary expertise, service, and ambiance.</p>
+                <button id="read-more-btn">Read more</button>
+                <p class="additional-paragraph" style="display:none;">Our team of experienced chefs brings you the finest in contemporary and traditional flavors, prepared with fresh and high-quality ingredients.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2 class="heading">Our Menu</h2>
+        <div class="menu-container">
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <h3>Starter</h3>
+                    <p>A selection of seasonal appetizers</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Main Course</h3>
+                    <p>Handcrafted dishes for all tastes</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Desserts</h3>
+                    <p>Delicious sweets to complete your meal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2 class="heading">Gallery</h2>
+        <div class="gallery-box">
+            <img src="images/h1.jpg" alt="Gallery Image 1">
+            <img src="images/h1.jpg" alt="Gallery Image 2">
+            <img src="images/h1.jpg" alt="Gallery Image 3">
+            <img src="images/h1.jpg" alt="Gallery Image 1">
+            <img src="images/h1.jpg" alt="Gallery Image 2">
+            <img src="images/h1.jpg" alt="Gallery Image 3">
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservations">
+        <h2 class="heading">Reservations</h2>
+        <div class="reservations-container">
+            <p>Reserve a table for your special event or just a casual dinner!</p>
+            <button id="reservations-btn">Book Now</button>
+            <p id="reservations-paragraph" style="display:none;">Please call us or fill out our reservation form to guarantee your spot.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="heading">Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- ScrollReveal and Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

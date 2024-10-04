@@ -1,0 +1,281 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #111;
+    color: #fff;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body, html {
+    overflow-x: hidden; /* Prevent overflow on smaller screens */
+}
+
+section {
+    min-height: 100vh; /* Makes sure each section takes up 100% of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2em;
+    text-decoration: none;
+    font-weight:900;
+    color: goldenrod;
+    
+}
+
+.navbar {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navbar a.active, .navbar a:hover {
+    color: goldenrod;
+}
+
+#menu-icon {
+    font-size: 2rem;
+    font-weight:900;
+    color: goldenrod;
+    display: none;
+    cursor: pointer;
+}
+
+#menu-icon.active, #menu-icon:hover {
+    color: rgb(191, 140, 38);
+}
+
+header.sticky {
+    background: none;
+}
+
+/* Home Section */
+.home {
+    height: 100vh;
+    background: url('/images/h1.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.home-content h1 {
+    font-size: 4em;
+    color: #fff;
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease;
+}
+
+.home-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease;
+}
+
+.multiple-text {
+    font-size: 1.3em;
+    color: goldenrod;
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.about-content p {
+    font-size: 1.2em;
+}
+
+.about-img {
+    width: 50%;
+    background: url('/images/7.jpeg') no-repeat center center/cover;
+    height: 500px;
+    border-radius: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Menu Section */
+.menu-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.menu-item {
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Gallery Section */
+.gallery-box {
+    display: inline-block;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.gallery-box img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-box img:hover {
+    transform: scale(1.1);
+}
+
+/* Reservations Section */
+.reservations-container {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#reservations-btn {
+    padding: 10px 20px;
+    background: goldenrod;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+#reservations-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Contact Section */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.contact form input, .contact form textarea {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #222;
+    color: #fff;
+    border: none;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    background: goldenrod;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact form button:hover {
+    background: #fff
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        padding: 15px 0;
+        width: 100%;
+        font-size: 1.2em;
+        border-bottom: 1px solid #333;
+    }
+
+    /* Style for the circular dotted icon */
+    #menu-icon.fa-ellipsis-v {
+        font-size: 1.8em;
+        color: goldenrod;
+    }
+
+   
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
