@@ -123,7 +123,7 @@ header.sticky {
 
 .about-img {
     width: 50%;
-    background: url('../images/7.jpeg') no-repeat center center/cover;
+    background: url('../images/b2.jpg') no-repeat center center/cover;
     height: 500px;
     border-radius: 100px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
@@ -233,14 +233,15 @@ header.sticky {
 
     #menu-icon {
         display: block;
+        cursor: pointer;
+        pointer-events: auto;
+        z-index: 1001; /* Make sure the menu icon is above any other elements */
+        position: relative;
     }
 
     .navbar {
         display: none;
-    }
-
-    .navbar {
-        display: none;
+        transition: all 0.3s ease;
         flex-direction: column;
         background-color: black;
         position: absolute;
@@ -248,10 +249,13 @@ header.sticky {
         right: 0;
         width: 100%;
         text-align: center;
+        z-index: 1000;
     }
 
     .navbar.active {
-        display: flex;
+        display: inline-flex;
+        max-height: 00px; 
+        height: 10%;
     }
 
     .navbar a {

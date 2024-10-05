@@ -1,5 +1,7 @@
+console.log("Script loaded");
+
 // Toggle the mobile menu
-let menuIcon = document.getElementById('menu-icon');
+let menuIcon = document.getElementById('menu-icon-wrapper');
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
@@ -7,6 +9,7 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('fa-xmark');
     navbar.classList.toggle('active');
 };
+
 
 // Handle smooth scrolling for section links
 let sections = document.querySelectorAll('section');
