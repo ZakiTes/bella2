@@ -56,7 +56,7 @@ window.onscroll = () => {
 
     // Remove menu icon and navbar classes on scroll
     if (navbar.classList.contains('active')) {
-        menuIcon.classList.remove('fa-xmark');
+        menuIcon.innerHTML = barsIcon;
         navbar.classList.remove('active');
     }
 };
