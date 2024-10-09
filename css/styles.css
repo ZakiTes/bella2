@@ -93,20 +93,21 @@ header.sticky {
 
 .home-content h1 {
     font-size: 4em;
-    color: #fff;
+    color: #000000;
     margin-bottom: 10px;
     animation: fadeIn 1.5s ease;
 }
 
 .home-content p {
     font-size: 1.5em;
+    color: rgb(0, 0, 0);
     margin-bottom: 20px;
     animation: fadeIn 2s ease;
 }
 
 .multiple-text {
     font-size: 1.3em;
-    color: goldenrod;
+    color: rgb(0, 0, 0);
 }
 
 /* About Section */
