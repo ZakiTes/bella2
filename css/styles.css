@@ -105,7 +105,7 @@ header.sticky {
 .home-content h1 {
     font-size: 4em;
     font-family: Brush Script MT;
-    color: goldenrod;
+    color: rgb(255, 255, 255);
     margin-bottom: 10px;
     animation: fadeIn 1.5s ease;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
@@ -114,7 +114,7 @@ header.sticky {
 .home-content p {
     font-size: 2.2em;
     font-family: Brush Script MT;
-    color: goldenrod;
+    color: rgb(255, 255, 255);
     margin-bottom: 20px;
     animation: fadeIn 2s ease;
     text-shadow: 2px 2px 0px   rgba(0, 0, 0, 0.7);
@@ -123,29 +123,74 @@ header.sticky {
 .multiple-text {
     font-size: 1.8em;
     font-family: Brush Script MT;
-    color: rgb(255, 140, 0);
+    color: rgb(255, 255, 255);
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
 }
 
 /* About Section */
-.about-container {
-    display: flex;
-    justify-content: space-between;
+#about {
     text-align: center;
-    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns: one for image, one for content */
+    gap: 20px; /* Adds space between the image and content */
+    align-items: start; /* Align content and image to the top */
+}
+
+.about-img {
+    width: 100%; /* Image will fully fill its grid column */
+    height: 500px;
+    background: url('../images/b2.jpg') no-repeat center center/cover;
+    border-radius: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    /* Lock the height and width so it won't change */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .about-content p {
     font-size: 1.2em;
 }
 
-.about-img {
-    width: 50%;
-    background: url('../images/b2.jpg') no-repeat center center/cover;
-    height: 500px;
-    border-radius: 100px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+#read-more-btn {
+    margin-top: 15px;
+    cursor: pointer;
+    width: 15%;
+    background-color: goldenrod;
 }
+
+#read-more-btn:hover {
+    background-color: white;
+}
+
+/* Initially hidden paragraph */
+.additional-paragraph {
+    display: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr; /* Stack the image and content vertically */
+    }
+
+    .about-img {
+        height: 300px; /* Reduce image height for smaller screens */
+    }
+}
+
 
 /* Menu Section */
 .menu-container {

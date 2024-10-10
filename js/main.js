@@ -83,17 +83,15 @@ const typed = new Typed('.multiple-text', {
 });
 
 // Read more button toggle
-document.getElementById('read-more-btn')?.addEventListener('click', function (event) {
-    event.preventDefault();
-    let additionalParagraph = document.querySelector('.additional-paragraph');
-    if (additionalParagraph) {
-        if (additionalParagraph.style.display === 'none' || additionalParagraph.style.display === '') {
-            additionalParagraph.style.display = 'block';
-            this.innerText = 'Read less';
-        } else {
-            additionalParagraph.style.display = 'none';
-            this.innerText = 'Read more';
-        }
+document.getElementById('read-more-btn').addEventListener('click', function() {
+    const additionalParagraph = document.querySelector('.additional-paragraph');
+    
+    if (additionalParagraph.style.display === 'none') {
+        additionalParagraph.style.display = 'block';
+        this.textContent = 'Read less';
+    } else {
+        additionalParagraph.style.display = 'none';
+        this.textContent = 'Read more';
     }
 });
 
