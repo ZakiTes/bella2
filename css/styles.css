@@ -409,6 +409,10 @@ header.sticky {
 }
 
 @media (max-width: 768px) {
+    h2 {
+        text-decoration: 1px underline goldenrod ;
+    
+    }
     .about-container {
         flex-direction: column;
         text-align: center;
