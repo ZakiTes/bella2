@@ -1,0 +1,59 @@
+{
+    "drinks": [
+      {
+        "name": "Mojito",
+        "description": "Classic cocktail made with white rum, mint, lime, sugar, and soda water.",
+        "price": 10.99,
+        "img": "./images/mojito.jpg"
+      },
+      {
+        "name": "Whiskey Sour",
+        "description": "A blend of whiskey, lemon juice, and sugar syrup with a dash of egg white.",
+        "price": 12.99,
+        "img": "./images/whiskey_sour.webp"
+      },
+      {
+        "name": "Martini",
+        "description": "A classic gin or vodka cocktail served with a twist of lemon or an olive.",
+        "price": 14.99,
+        "img": "./images/martini.jpg"
+      },
+      {
+        "name": "Margarita",
+        "description": "Tequila, lime juice, and triple sec served with a salted rim.",
+        "price": 11.99,
+        "img": "./images/margarita.jpg"
+      },
+      {
+        "name": "Beer",
+        "description": "Assorted local and imported beers on tap or in bottles.",
+        "price": 6.99,
+        "img": "./images/beer.jpg"
+      },
+      {
+        "name": "Red Wine",
+        "description": "A selection of fine red wines from around the world.",
+        "price": 8.99,
+        "img": "./images/red_wine.webp"
+      },
+      {
+        "name": "White Wine",
+        "description": "A selection of crisp, chilled white wines from various regions.",
+        "price": 8.99,
+        "img": "./images/white_wine.jpg"
+      },
+      {
+        "name": "Coca-Cola",
+        "description": "Classic refreshing soft drink, served chilled.",
+        "price": 2.99,
+        "img": "./images/coca_cola.png"
+      },
+      {
+        "name": "Sparkling Water",
+        "description": "Chilled sparkling water, served plain or with a slice of lime.",
+        "price": 2.99,
+        "img": "./images/sparkling_water.webp"
+      }
+    ]
+  }
+  
