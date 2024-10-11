@@ -61,21 +61,30 @@
         <h2 class="heading">Our Menu</h2>
         <div class="menu-container">
             <div class="menu-grid">
-                <div class="menu-item">
+                <div class="menu-item" data-category="starter">
                     <h3>Starter</h3>
                     <p>A selection of seasonal appetizers</p>
                 </div>
-                <div class="menu-item">
+                <div class="menu-item" data-category="main">
                     <h3>Main Course</h3>
                     <p>Handcrafted dishes for all tastes</p>
                 </div>
-                <div class="menu-item">
+                <div class="menu-item" data-category="dessert">
                     <h3>Desserts</h3>
                     <p>Delicious sweets to complete your meal</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Modal Section -->
+    <div id="menu-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span> <!-- Close button -->
+            <h2 id="modal-title"></h2>
+            <ul id="modal-items"></ul>
+        </div>
+    </div>
 
     <!-- Gallery Section -->
     <section id="gallery">
@@ -116,6 +125,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
 
