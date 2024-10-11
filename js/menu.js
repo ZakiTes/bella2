@@ -9,7 +9,7 @@ function openModal(category) {
     modalItems.innerHTML = ''; // Clear previous items
 
     // Fetch the appropriate JSON file based on category
-    fetch(`../json/${category}.json`)
+    fetch(`./json/${category}.json`)
         .then(response => response.json())
         .then(data => {
             const items = data[category]; // Get items from the JSON file
