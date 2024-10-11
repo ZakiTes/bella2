@@ -4,13 +4,13 @@
       "name": "Bruschetta",
       "description": "Toasted bread topped with fresh tomatoes and basil",
       "price": 8.99,
-      "img": "images/bruschetta.jpg"
+      "img": "../images/h1.jpg"
     },
     {
       "name": "Garlic Bread",
       "description": "Classic garlic butter spread on toasted bread",
       "price": 5.99,
-      "img": "images/garlic-bread.jpg"
+      "img": "../images/h1.jpg"
     },
     {
       "name": "Caprese Salad",
