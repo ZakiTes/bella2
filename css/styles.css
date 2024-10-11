@@ -142,14 +142,14 @@ header.sticky {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal-width columns: one for image, one for content */
     gap: 20px; /* Adds space between the image and content */
-    align-items: start; /* Align content and image to the top */
+    align-items: center; /* Align content and image to the top */
 }
 
 .about-img {
     width: 100%; /* Image will fully fill its grid column */
     height: 500px;
     background: url('../images/b2.jpg') no-repeat center center/cover;
-    border-radius: 100px;
+    border-radius: 50px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     /* Lock the height and width so it won't change */
 }
@@ -176,7 +176,7 @@ header.sticky {
 }
 
 /* Initially hidden paragraph */
-.additional-paragraph {
+.additional-paragraph, .additional-paragraph1 {
     display: none;
 }
 
@@ -189,10 +189,23 @@ header.sticky {
     .about-img {
         height: 300px; /* Reduce image height for smaller screens */
     }
+
+    #read-more-btn {
+        width: 30%;
+        height: auto;
+    }
+
+    .about-content p {
+        font-size: 0.9em;
+    }
 }
 
 
 /* Menu Section */
+h2 {
+    text-decoration: 1px underline goldenrod ;
+
+}
 .menu-container {
     text-align: center;
     padding: 50px 20px;

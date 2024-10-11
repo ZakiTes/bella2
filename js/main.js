@@ -85,12 +85,15 @@ const typed = new Typed('.multiple-text', {
 // Read more button toggle
 document.getElementById('read-more-btn').addEventListener('click', function() {
     const additionalParagraph = document.querySelector('.additional-paragraph');
+    const additionalParagraph1 = document.querySelector('.additional-paragraph1');
     
-    if (additionalParagraph.style.display === 'none') {
+    if (additionalParagraph.style.display === 'none' && additionalParagraph1.style.display === 'none') {
         additionalParagraph.style.display = 'block';
+        additionalParagraph1.style.display = 'block';
         this.textContent = 'Read less';
     } else {
         additionalParagraph.style.display = 'none';
+        additionalParagraph1.style.display = 'none';
         this.textContent = 'Read more';
     }
 });
