@@ -1,51 +1,37 @@
 {
   "dessert": [
     {
-      "name": "Tiramisu",
-      "description": "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone",
-      "price": 7.99
+      "name": "Geat",
+      "description": "A warm, doughy porridge made from barley or wheat flour, served with butter and berbere spice.",
+      "price": 6.99,
+      "img": "./images/genfo.jpg"
     },
     {
-      "name": "Cheesecake",
-      "description": "Creamy cheesecake with a graham cracker crust",
-      "price": 6.99
+      "name": "Himbasha",
+      "description": "A lightly sweetened, festive Ethiopian bread flavored with cardamom and raisins.",
+      "price": 3.99,
+      "img": "./images/himbasha.jpg"
     },
     {
-      "name": "Gelato",
-      "description": "Italian ice cream, assorted flavors",
-      "price": 5.99
+      "name": "Atayef",
+      "description": "A Middle Eastern dessert served in Eritrea, small pancakes stuffed with nuts and drizzled with syrup.",
+      "price": 6.49,
+      "img": "./images/atayef.webp"
     },
     {
-      "name": "Tiramisu",
-      "description": "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone",
-      "price": 7.99
+      "name": "Baklava",
+      "description": "Layers of flaky pastry filled with nuts and soaked in honey, enjoyed in both Ethiopia and Eritrea.",
+      "price": 5.49,
+      "img": "./images/baklava.jpg"
     },
     {
-      "name": "Cheesecake",
-      "description": "Creamy cheesecake with a graham cracker crust",
-      "price": 6.99
-    },
-    {
-      "name": "Gelato",
-      "description": "Italian ice cream, assorted flavors",
-      "price": 5.99
-    },
-    {
-      "name": "Tiramisu",
-      "description": "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone",
-      "price": 7.99
-    },
-    {
-      "name": "Cheesecake",
-      "description": "Creamy cheesecake with a graham cracker crust",
-      "price": 6.99
-    },
-    {
-      "name": "Gelato",
-      "description": "Italian ice cream, assorted flavors",
-      "price": 5.99
+      "name": "Tihlo",
+      "description": "A dish made of barley dough balls served with spicy berbere sauce, sometimes eaten as a savory dessert.",
+      "price": 7.99,
+      "img": "./images/tihlo.jpg"
     }
   ]
 }
+
 
   

@@ -1,24 +1,25 @@
 {
   "starter": [
     {
-      "name": "Bruschetta",
-      "description": "Toasted bread topped with fresh tomatoes and basil",
-      "price": 8.99,
-      "img": "./images/h1.jpg"
-    },
-    {
-      "name": "Garlic Bread",
-      "description": "Classic garlic butter spread on toasted bread",
+      "name": "Azifa",
+      "description": "A refreshing Ethiopian lentil salad made with green lentils, mustard, and fresh herbs.",
       "price": 5.99,
-      "img": "./images/h1.jpg"
+      "img": "./images/azifa.jpg"
     },
     {
-      "name": "Caprese Salad",
-      "description": "Fresh mozzarella, tomatoes, and basil",
-      "price": 9.99,
-      "img": "./images/h1.jpg"
+      "name": "Timatim Fitfit",
+      "description": "A mix of Injera pieces with diced tomatoes, onions, and jalapeños, dressed in a tangy vinaigrette.",
+      "price": 6.99,
+      "img": "./images/timatim-fitfit.jpg"
+    },
+    {
+      "name": "Dabo Kolo",
+      "description": "Small, crunchy, spiced bites of roasted dough, often served as a snack or appetizer.",
+      "price": 4.99,
+      "img": "./images/dabo-kolo.jpg"
     }
   ]
 }
+
 
   

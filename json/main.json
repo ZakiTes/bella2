@@ -1,20 +1,78 @@
 {
-    "main": [
-      {
-        "name": "Steak",
-        "description": "Grilled to perfection with a side of vegetables",
-        "price": 25.99
-      },
-      {
-        "name": "Pasta Carbonara",
-        "description": "Creamy pasta with bacon and parmesan",
-        "price": 18.99
-      },
-      {
-        "name": "Roast Chicken",
-        "description": "Slow-roasted chicken with herbs and garlic",
-        "price": 22.99
-      }
-    ]
-  }
+  "main": [
+    {
+      "name": "Doro Wat",
+      "description": "Spicy Ethiopian chicken stew simmered in berbere sauce, served with Injera.",
+      "price": 17.99,
+      "img": "./images/doro-wat.jpg"
+    },
+    {
+      "name": "Shiro",
+      "description": "A thick stew made from ground chickpeas and spices, often served with Injera.",
+      "price": 12.99,
+      "img": "./images/shiro.webp"
+    },
+    {
+      "name": "Kitfo",
+      "description": "Minced beef seasoned with Ethiopian butter and spices, traditionally served raw or rare.",
+      "price": 19.99,
+      "img": "./images/kitfo.jpg"
+    },
+    {
+      "name": "Zigni",
+      "description": "A rich and spicy Eritrean beef stew, slow-cooked in berbere sauce.",
+      "price": 16.99,
+      "img": "./images/zigni.jpg"
+    },
+    {
+      "name": "Tibs",
+      "description": "Sautéed beef or lamb cubes with onions, tomatoes, and peppers, served with Injera.",
+      "price": 18.99,
+      "img": "./images/tibs.jpg"
+    },
+    {
+      "name": "Gomen",
+      "description": "Collard greens sautéed with garlic and spices, often served alongside meat dishes.",
+      "price": 14.99,
+      "img": "./images/gomen.jpg"
+    },
+    {
+      "name": "Firfir",
+      "description": "Spicy and flavorful Injera pieces mixed with berbere sauce and butter.",
+      "price": 13.99,
+      "img": "./images/firfir.webp"
+    },
+    {
+      "name": "Atakilt Wat",
+      "description": "Stew made from cabbage, carrots, and potatoes, seasoned with turmeric and spices.",
+      "price": 11.99,
+      "img": "./images/atakilt-wat.jpg"
+    },
+    {
+      "name": "Chechebsa",
+      "description": "Fried flatbread pieces mixed with spiced butter and berbere, a favorite breakfast dish.",
+      "price": 10.99,
+      "img": "./images/chechebsa.jpg"
+    },
+    {
+      "name": "Dulet",
+      "description": "A savory dish made from minced tripe, liver, and beef or lamb, mixed with Ethiopian spices.",
+      "price": 16.99,
+      "img": "./images/dulet.jpg"
+    },
+    {
+      "name": "Kuanta Firfir",
+      "description": "Dried, spiced beef strips (kuanta) mixed with Injera and berbere sauce.",
+      "price": 14.99,
+      "img": "./images/kuanta-firfir.jpg"
+    },
+    {
+      "name": "Shekla Tibs",
+      "description": "Sautéed beef or lamb cooked with onions, tomatoes, and spices, served sizzling in a hot clay pot.",
+      "price": 21.99,
+      "img": "./images/shekla-tibs.jpg"
+    }
+  ]
+}
+
   
