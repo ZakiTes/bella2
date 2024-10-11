@@ -15,7 +15,7 @@ body {
 }
 
 body, html {
-    overflow-x: hidden; /* Prevent overflow on smaller screens */
+    overflow-x: hidden; 
 }
 
 section {
@@ -25,6 +25,10 @@ section {
     align-items: center;
     text-align: center;
     padding: 20px;
+}
+h2 {
+    text-decoration: 1px underline goldenrod ;
+
 }
 
 /* Header Styles */
@@ -202,10 +206,6 @@ header.sticky {
 
 
 /* Menu Section */
-h2 {
-    text-decoration: 1px underline goldenrod ;
-
-}
 .menu-container {
     text-align: center;
     padding: 50px 20px;
