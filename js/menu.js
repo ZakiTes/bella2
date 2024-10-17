@@ -58,16 +58,16 @@ function openModal(category) {
   
 
 // Close the modal
-function closeModal() {
+function closeModal1() {
     document.getElementById('menu-modal').style.display = 'none';
 }
 
 // Close modal when clicking the close button or outside the modal content
-document.querySelector('.close').addEventListener('click', closeModal);
+
 window.addEventListener('click', function(event) {
     const modal = document.getElementById('menu-modal');
     if (event.target == modal) {
-        closeModal();
+        closeModal1();
     }
 });
 
@@ -78,8 +78,3 @@ document.querySelectorAll('.menu-item').forEach(item => {
         openModal(category);
     });
 });
-
-
-
-
-

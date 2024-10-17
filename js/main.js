@@ -2,7 +2,6 @@ console.log("Script loaded");
 
 // Toggle the mobile menu
 let menuIcon = document.getElementById('menu-icon-wrapper');
-
 let navbar = document.querySelector('.navbar');
 
 const barsIcon = `
@@ -27,22 +26,20 @@ menuIcon.onclick = () => {
     }
 };
 
-
-// Handle smooth scrolling for section links
+// Smooth scrolling for section links
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
-window.onscroll = () => {
+window.addEventListener('scroll', () => {
+    let top = window.scrollY;
+    
     sections.forEach(sec => {
-        let top = window.scrollY;
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
         if (top >= offset && top < offset + height) {
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-            });
+            navLinks.forEach(link => link.classList.remove('active'));
             let targetLink = document.querySelector('header nav a[href="#' + id + '"]');
             if (targetLink) {
                 targetLink.classList.add('active');
@@ -54,12 +51,12 @@ window.onscroll = () => {
     let header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 100);
 
-    // Remove menu icon and navbar classes on scroll
+    // Remove menu icon and navbar classes on scroll (only when the navbar is active)
     if (navbar.classList.contains('active')) {
         menuIcon.innerHTML = barsIcon;
         navbar.classList.remove('active');
     }
-};
+});
 
 // ScrollReveal animations
 ScrollReveal({
@@ -83,7 +80,7 @@ const typed = new Typed('.multiple-text', {
 });
 
 // Read more button toggle
-document.getElementById('read-more-btn').addEventListener('click', function() {
+document.getElementById('read-more-btn')?.addEventListener('click', function() {
     const additionalParagraph = document.querySelector('.additional-paragraph');
     const additionalParagraph1 = document.querySelector('.additional-paragraph1');
     
@@ -127,6 +124,67 @@ document.querySelectorAll('.navbar a').forEach(anchor => {
         });
     });
 });
+
+// Gallery Modal functionality
+document.addEventListener("DOMContentLoaded", function () {
+    let currentImageIndex = 0;
+    const images = document.querySelectorAll(".gallery-box img");
+    const modal = document.getElementById("galleryModal");
+    const modalImage = document.getElementById("modalImage");
+
+    // Open the modal and display the clicked image
+    function openModal(index) {
+        modal.style.display = "block";
+        modalImage.src = images[index].src;
+        currentImageIndex = index;
+    }
+
+    // Close the modal
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    // Change slides in the modal
+    function changeSlide(direction) {
+        currentImageIndex += direction;
+        if (currentImageIndex < 0) {
+            currentImageIndex = images.length - 1;
+        } else if (currentImageIndex >= images.length) {
+            currentImageIndex = 0;
+        }
+        modalImage.src = images[currentImageIndex].src;
+    }
+
+    // Attach event listeners for each image
+    images.forEach((img, index) => {
+        img.onclick = () => openModal(index);
+    });
+
+    // Slide change buttons
+    document.querySelector(".prev").onclick = () => changeSlide(-1);
+    document.querySelector(".next").onclick = () => changeSlide(1);
+
+    // Close modal when clicking outside of the modal content (image)
+    modal.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Close modal when scrolling the page
+    window.addEventListener('scroll', function () {
+        if (modal.style.display === "block") {
+            closeModal();
+        }
+    });
+});
+
+
+
+
+
+
+
 
 
 
