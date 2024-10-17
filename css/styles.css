@@ -169,14 +169,21 @@ header.sticky {
 }
 
 #read-more-btn {
-    margin-top: 15px;
-    width: 15%;
-    height: auto;
-    background-color: rgb(218, 181, 89);
+    height: 22px;
+    width: 112px;
+    background-color: goldenrod;
+    border: none;
+    color: black;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+
 }
 
 #read-more-btn:hover {
-    background-color: goldenrod;
+    background-color: white;
+    color: black;
 }
 
 /* Initially hidden paragraph */
@@ -195,7 +202,7 @@ header.sticky {
     }
 
     #read-more-btn {
-        width: 30%;
+        width: 35%;
         height: auto;
     }
 
@@ -498,7 +505,7 @@ button#submit-reservation:hover {
 }
 
 #contact-form, #map {
-    width: 48%;
+    width: 50%;
 }
 
 #map iframe {
